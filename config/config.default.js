@@ -6,5 +6,8 @@
  * @property {String} SOME_KEY - some description
  */
 exports.knex = {
-
+  client: 'sqlite3',
+  connection: {
+    filename: './test.db3',
+  },
 };

@@ -10,7 +10,9 @@
     "eggPlugin",
     "egg-plugin"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "knex": "^0.16.3"
+  },
   "devDependencies": {
     "autod": "^3.0.0",
     "autod-egg": "^1.0.0",
@@ -20,6 +22,7 @@
     "egg-mock": "^3.13.0",
     "eslint": "^4.11.0",
     "eslint-config-egg": "^5.1.0",
+    "sqlite3": "^4.0.4",
     "webstorm-disable-index": "^1.2.0"
   },
   "engines": {
@@ -35,9 +38,9 @@
     "autod": "autod"
   },
   "files": [
+    "config",
     "app.js",
-    "agent.js",
-    "config"
+    "lib"
   ],
   "ci": {
     "version": "8, 9"
