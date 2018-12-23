@@ -20,9 +20,7 @@
 [download-image]: https://img.shields.io/npm/dm/egg-knex.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-knex
 
-<!--
-Description here.
--->
+knex plugin for egg
 
 ## Install
 
@@ -45,14 +43,25 @@ exports.knex = {
 ```js
 // {app_root}/config/config.default.js
 exports.knex = {
+      client: 'sqlite3',
+      connection: {
+        filename: './test.db3',
+      },
 };
 ```
 
-see [config/config.default.js](config/config.default.js) for more detail.
+see [Knex.js](https://knexjs.org/) for more detail.
 
 ## Example
-
-<!-- example here -->
+```js
+// {app_root}/controller/home.js
+class HomeController extends Controller {
+    async index() {
+        const data = await this.app.knex('user').select('*');
+        this.ctx.body = data;
+    }
+}
+```
 
 ## Questions & Suggestions
 
