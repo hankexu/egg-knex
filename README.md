@@ -27,7 +27,7 @@ Description here.
 ## Install
 
 ```bash
-$ npm i egg-knex --save
+$ npm i egg-knex-promise --save
 ```
 
 ## Usage
