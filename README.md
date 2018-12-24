@@ -31,7 +31,7 @@ $ npm i egg-knex-promise --save
 // {app_root}/config/plugin.js
 exports.knex = {
   enable: true,
-  package: 'egg-knex',
+  package: 'egg-knex-promise',
 };
 ```
 
