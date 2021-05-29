@@ -5,3 +5,4 @@ module.exports = app => {
 
   router.get('/', controller.home.index);
 };
+

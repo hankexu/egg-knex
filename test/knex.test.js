@@ -12,6 +12,7 @@ describe('test/knex.test.js', () => {
   });
 
   after(() => app.close());
+
   afterEach(mock.restore);
 
   it('should GET /', () => {
