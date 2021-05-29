@@ -36,9 +36,7 @@
     "lint": "eslint .",
     "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
     "pkgfiles": "egg-bin pkgfiles",
-    "autod": "autod",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "autod": "autod"
   },
   "files": [
     "config",
