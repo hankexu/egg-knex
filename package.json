@@ -11,7 +11,8 @@
     "egg-plugin"
   ],
   "dependencies": {
-    "knex": "^0.19.5"
+    "knex": "^0.16.3",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "autod": "^3.0.0",
@@ -35,7 +36,9 @@
     "lint": "eslint .",
     "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
     "pkgfiles": "egg-bin pkgfiles",
-    "autod": "autod"
+    "autod": "autod",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "files": [
     "config",
@@ -54,5 +57,6 @@
   },
   "homepage": "https://github.com/hankexu/egg-knex#readme",
   "author": "Hanke Xu",
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
